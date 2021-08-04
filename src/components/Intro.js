@@ -4,6 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import Avatar from '@material-ui/core/Avatar';
 import avatar from '../imgs/avatar.jfif';
 import Grid from '@material-ui/core/Grid';
+import Typing from 'react-typing-animation';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,6 +29,22 @@ export default function Intro() {
     <Grid container direction="column" justifyContent="space-between" alignItems="center" spacing={7}>
         <Grid item xs>
             <Avatar alt="Andre Ribau" src={avatar} className={classes.large} />
+        </Grid>
+        <Grid item xs>
+            <Typography component="h1" variant="h3">
+               <Typing>
+                    <Typing.Speed ms={100} />
+                    <span>Hey</span>
+                    <Typing.Delay ms={250} />
+                    <Typing.Backspace count={3} />
+                    <Typing.Speed ms={100} />
+                    <span>Hello</span>
+                    <Typing.Delay ms={250} />
+                    <Typing.Backspace count={5} />
+                    <Typing.Speed ms={100} />
+                    <span>Hi, im Andre!</span>
+                </Typing>
+            </Typography>
         </Grid>
         <Grid item xs>
             <Typography component="h1" variant="h5">

@@ -48,7 +48,7 @@ export default function Intro() {
                     <Typing.Delay ms={250} />
                     <Typing.Backspace count={5} />
                     <Typing.Speed ms={100} />
-                    <span>Hi, im Andre!</span>
+                    <span>Hi, I'm Andre!</span>
                 </Typing>
             </Typography>
         </Grid>

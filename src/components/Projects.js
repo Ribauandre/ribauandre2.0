@@ -13,8 +13,8 @@ import WebIcon from '@material-ui/icons/Web';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginTop: theme.spacing(8),
-    marginBottom: theme.spacing(8),
+    marginTop: theme.spacing(4),
+    marginBottom: theme.spacing(4),
     color: "#fff",
     flexGrow: 1,
   },
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-export default function StickyFooter() {
+export default function Projects() {
   const classes = useStyles();
 
   return (
@@ -64,9 +64,11 @@ export default function StickyFooter() {
                         <CardHeader className={classes.gutter} title="Self-Service Portal"/>
                             <CardContent>
                                 <Typography variant="body2" component="p">
-                                    Utilizes full stack React, Postgres, and SpringBoot Rest API/Java backend,
-                                    to deliver an application that allows associates to determine source code, automatically builds/deploys code to PAS infrastructure.
-                                    Along with persistent environment status overviews and status pages.
+                                <ul>
+                                  <li>Utilizes full stack React, Postgres, and SpringBoot Rest API/Java backend.</li>
+                                  <li>This delivers an application that allows users to determine source code and builds/deploys code to PAS .</li>
+                                  <li>SSP also provides application monitoring and env status pages.</li>
+                                </ul>
                                 </Typography>
                             </CardContent>
 
@@ -102,10 +104,11 @@ export default function StickyFooter() {
                           <CardActionArea href="https://thawing-citadel-50331.herokuapp.com/">
                             <CardContent>
                               <Typography variant="body2" component="p">
-                                Uses MongoDB Atlas cloud data-base on an elastic cluster. Node.js Express as the application server. Then
-                                React as the front-end technology and Heroku for deployment. This MERN stack was used to create a fast,
-                                responsive Library system that allows a user to Donate a book, Borrow/Return a book, or Delete the book.
-                                Please feel free to add a book!
+                                <ul>
+                                  <li>Uses MongoDB Atlas cloud data-base on an elastic cluster, Node.js Express as the application server and React as the front-end technology.</li>
+                                  <li>LibraryLender is deployed to Heroku and utilizes the MERN stack.</li>
+                                  <li>This helps to create a responsive Library system that allows a user to Donate a book, Borrow/Return a book, or Delete the book.</li>
+                                </ul>
                               </Typography>
                             </CardContent>
                           </CardActionArea>
@@ -144,10 +147,11 @@ export default function StickyFooter() {
                           <CardActionArea href="https://github.com/Ribauandre/BudgetTime.io">
                             <CardContent>
                               <Typography variant="body2" component="p">
-                                 A stand alone application that uses MySql as a database, Java in the middle and JavaFX as the front-end.
-                                 This application allows you to create an account and set categories in which you are allowed to alot a
-                                 precentage of your net income to. It then takes that information and creates charts and graphs that shows
-                                 how much of your money goes into each category.
+                               <ul>
+                                <li>A stand alone application that uses MySql as a database, Java in the middle and JavaFX as the front-end.</li>
+                                <li>BudgetTime.io allows you to create an account and set categories in which you are allowed to allot a percentage of your net income to.</li>
+                                <li>It then takes that information and creates charts and graphs that shows how much of your money goes into each category.</li>
+                               </ul>
                               </Typography>
                             </CardContent>
                           </CardActionArea>
@@ -158,9 +162,11 @@ export default function StickyFooter() {
                             <CardHeader className={classes.gutter} title="SkillsBank" />
                             <CardContent>
                               <Typography variant="body2" component="p">
-                                Utilizes full stack J2EE, AS400, and WebSphere, to deliver an application that allows an associate to rate
-                                themselves on many different subjects and gain recognition for what they may know while also allowing
-                                managers to identify gaps in skill and lead an associate to develop their skills.
+                              <ul>
+                                <li>Utilizes full stack J2EE, AS400, and WebSphere, to deliver an application that allows an associate to rate themselves on many different subjects.</li>
+                                <li>this allows them to gain recognition for what they may know while also allowing managers to identify gaps in skill.</li>
+                                <li>Managers could then match someone with an expert to help them develop their skills.</li>
+                              </ul>
                               </Typography>
                             </CardContent>
                         </Card>

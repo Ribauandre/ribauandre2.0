@@ -23,7 +23,7 @@ function App() {
                 <Intro/>
             </Grid>
             <Grid item>
-                <Projects/>
+                <Projects />
             </Grid>
             <Grid item>
                 <StickyFooter />

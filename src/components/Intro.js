@@ -58,6 +58,7 @@ export default function Intro() {
                 SRE/SWE at <GrApple /> with a passion for all things tech!
             </Typography>
         </Grid>
+
      </Grid>
   </div>
   );
